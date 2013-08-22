@@ -154,13 +154,14 @@ Or if you've already cloned it and want to get the latest version just run
 	git checkout source
     git pull origin source
 
-This will work from the Cloud9 side as well, just remember to include the `origin source`
+This will work from the Cloud9 side as well, just remember to include the `origin source`, for some reason my source
+branch was merging into my master branch.
 
 Unless you really know what you're doing with Git, which I do not, I do not suggest running `rake setup_github_pages` or 
 `rake generate` in this location. For me it just created a bunch of conflicts in my Cloud9 workspace that I did not have 
 the chops to resolve.
 
-Make the appropriate changes then commit the source
+Write some more blog posts then commit the source
 
     git add .
     git commit -m 'source commit'
