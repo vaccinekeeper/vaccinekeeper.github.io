@@ -150,6 +150,11 @@ just make sure you get 1.9.3.
 Clone the repository
     git clone git@github.com:organization/organization.github.io.git project name
 
+Or if you've already cloned it and want to get the latest version just run
+    git pull origin source
+
+This will work from the Cloud9 side as well, just remember to include the origin source
+
 Go the the source branch so you get access to the Rakefile
     git checkout source
 
