@@ -140,3 +140,25 @@ And remember to commit the source
     git add .
     git commit -m 'source commit'
     git push origin source
+
+
+#### 8. Optional setup for you local machine
+
+Make sure you have Ruby installed. Should be standard on OSX but [on windows you can use this installed](http://rubyinstaller.org/)
+just make sure you get 1.9.3.
+
+Clone the repository
+    git clone git@github.com:organization/organization.github.io.git project name
+
+Go the the source branch so you get access to the Rakefile
+    git checkout source
+
+Unless you really know what you're doing with Git, which I do not, I do not suggest running `rake setup_github_pages` or 
+`rake generate` in this location. For me it just created a bunch of conflicts in my Cloud9 workspace that I did not have 
+the chops to resolve.
+
+Make the appropriate changes then commit the source
+
+    git add .
+    git commit -m 'source commit'
+    git push origin source
