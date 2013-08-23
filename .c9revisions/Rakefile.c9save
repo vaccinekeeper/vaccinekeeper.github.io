@@ -3,3 +3,6 @@
 {"ts":1377196746584,"patch":[[{"diffs":[[0,"watch\")\n"],[1,"#rackupPid = Process.spawn(\"rackup --port #{server_port}\")\n"],[0,"  rackup"]],"start1":3857,"start2":3857,"length1":16,"length2":75},{"diffs":[[0,"ss.spawn(\"rackup"],[1," --host #{server_host}"],[0," --port #{server"]],"start1":3943,"start2":3943,"length1":32,"length2":54}]],"length":15916,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1377203391004,"patch":[[{"diffs":[[0," origin "],[1,"+"],[0,"#{deploy"]],"start1":11088,"start2":11088,"length1":16,"length2":17}]],"length":15917,"saved":false}
 {"ts":1377203423451,"patch":[[{"diffs":[[0," origin "],[-1,"+"],[0,"#{deploy"]],"start1":11088,"start2":11088,"length1":17,"length2":16}]],"length":15916,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1377213738174,"patch":[[{"diffs":[[0," 'source"],[1,"/blog"],[0,"'    # d"]],"start1":616,"start2":616,"length1":16,"length2":21}]],"length":15921,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1377277750631,"patch":[[{"diffs":[[0," origin "],[1,"+"],[0,"#{deploy"]],"start1":11093,"start2":11093,"length1":16,"length2":17}]],"length":15922,"saved":false}
+{"ts":1377277766615,"patch":[[{"diffs":[[0," origin "],[-1,"+"],[0,"#{deploy"]],"start1":11093,"start2":11093,"length1":17,"length2":16}]],"length":15921,"saved":false}

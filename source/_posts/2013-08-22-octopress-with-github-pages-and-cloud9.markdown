@@ -3,7 +3,8 @@ layout: post
 title: "Octopress with Github Pages and Cloud9"
 date: 2013-08-22 14:35
 comments: true
-categories: 
+categories: tech
+author: Michael Janiak
 ---
 
 This blog runs on [Octopress](http://octopress.org/), a framework for [Jekyll](https://github.com/mojombo/jekyll) 
@@ -22,12 +23,15 @@ shared web hosting provider.
 
 Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make my life
 easier I turned to Octopress, an establish framework that takes care of all the pain and has many nice
-publicly available themes to hack.
+themes to hack.
 
-The only thing missing with Octopress / Jekyll is it doesn't have a web interface, so that's why I plugged it into Cloud9. 
+The only thing missing with Octopress / Jekyll is it doesn't have a web interface for when I'm on the go,
+so that's why I plugged it into Cloud9. A side benefit of this is, since I run on a windows machine,
+I don't need to install Ruby.
 
-Getting it all running was non trivial so I figure this could be a useful blog post for those that are into this kind of thing!
+Getting it all running wasn't completely trivial so I figure this could be a useful blog post for those that are into this kind of thing!
 
+<!-- more -->
 
 #### 0. Open a GitHub account and set up a public SSH key that you can use with Cloud9
 
@@ -73,7 +77,7 @@ First up, install the default theme
     rake install
 
 
-#### 4. At this stage you can generate your blog and view a preview or you can skip this step
+#### 4. At this stage you can generate your blog and view a preview or you can go straight to 5
 
 Unlike Wordpress, which actively pulls your posts out of a database, Jekyll parses your source files then uses that information
 to generate a static version of your website. Every time you make a change to the source, that is write a new page or blog post,
@@ -84,7 +88,7 @@ Run the Octopress blog generator
 
 If you run the preview now you will get `Error: you may be using the wrong PORT & HOST for your server app`
 
-To fix that, [edit the Rakefile](http://www.devopsy.com/blog/2012/10/04/octopress-on-cloud9/) like so:
+To fix that, [edit the Rakefile](http://www.devopsy.com/blog/2012/10/04/octopress-on-cloud9/):
 
     #server_port     = "4000"      # Comment out this line and the lines below
     server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
