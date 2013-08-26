@@ -14,7 +14,8 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
-  gem 'webrick', '~> 1.3.1'
+  gem 'webrick', '~> 1.3.1' # explicit dependency added to remove error
+  gem 'rb-inotify', '~> 0.9' # a dependency error I was getting when using sass for previews
 end
 
 gem 'sinatra', '~> 1.4.2'

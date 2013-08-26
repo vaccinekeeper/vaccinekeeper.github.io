@@ -21,15 +21,15 @@ means I can host it out of static locations such as GitHub Pages or [Amazon S3](
 Not only are these services free, at least for now, but they should be more robust than your random 
 shared web hosting provider.
 
-Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make my life
-easier I turned to Octopress, an establish framework that takes care of all the pain and has many nice
+Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make life
+easier I turned to Octopress, an establish framework that takes care of all the pain and has several decent 
 themes to hack.
 
 The only thing missing with Octopress / Jekyll is it doesn't have a web interface for when I'm on the go,
-so that's why I plugged it into Cloud9. A side benefit of this is, since I run on a windows machine,
-I don't need to install Ruby.
+so that's why I plugged it into Cloud9. Not only does Cloud9 give you an IDE, they also give you a
+Ruby virtual machine.
 
-Getting it all running wasn't completely trivial so I figure this could be a useful blog post for those that are into this kind of thing!
+Getting it running wasn't completely trivial so I figure this could be a useful blog post for those that are into this kind of thing!
 
 <!-- more -->
 

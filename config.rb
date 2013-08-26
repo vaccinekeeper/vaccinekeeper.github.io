@@ -17,3 +17,7 @@ fonts_dir = "source/fonts"
 
 line_comments = false
 output_style = :compressed
+
+# https://github.com/chriseppstein/compass/issues/1108
+sass_options = {:sourcemap => true}
+enable_sourcemaps = true 

@@ -62,6 +62,7 @@ task :watch do
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   puts "Starting to watch source with Jekyll and Compass."
   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
+
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
   compassPid = Process.spawn("compass watch")
 
@@ -80,6 +81,10 @@ task :preview do
   system "compass compile --css-dir #{source_dir}/stylesheets" unless File.exist?("#{source_dir}/stylesheets/screen.css")
   jekyllPid = Process.spawn({"OCTOPRESS_ENV"=>"preview"}, "jekyll --auto")
   compassPid = Process.spawn("compass watch")
+# https://github.com/chriseppstein/compass/issues/1108
+#  compassPid = Process.spawn("sass --compass --watch sass:#{source_dir}/stylesheets")
+
+
 #rackupPid = Process.spawn("rackup --port #{server_port}")
   rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
 
