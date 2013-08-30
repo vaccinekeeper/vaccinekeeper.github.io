@@ -51,6 +51,11 @@
 
           if (self.settings.$topbar.parent().hasClass('fixed')) {
             $('body').css('padding-top', self.outerHeight(self.settings.$topbar));
+            // https://github.com/zurb/foundation/pull/2742/files
+            // var paddingTop = self.outerHeight(self.settings.$topbar);
+            // paddingTop += parseInt(self.settings.$topbar.css('margin-bottom'));
+            // $('body').css('padding-top', paddingTop);
+
           }
         });
 

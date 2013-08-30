@@ -1,0 +1,31 @@
+
+//Custom
+
+
+
+.vk-button {
+    @include button-base;
+    @include button-size;
+    @include button-style($nice-blue, 0, false);
+
+}
+
+
+@mixin box-shadow($right:0px, $down:5px, $blur:20px, $offset:0px, $color: rgba(0,0,0,0.75), $inset:"") {
+
+    -webkit-box-shadow: $right $down $blur $offset $color unquote($inset);
+    -moz-box-shadow: $right $down $blur $offset $color unquote($inset);
+    box-shadow: $right $down $blur $offset $color unquote($inset);
+}
+
+.video-shadow{
+    @include box-shadow;
+}
+.inner-shadow{
+    @include box-shadow(0, 3px, 3px, -3px, rgba(0,0,0,0.75), inset);
+}
+
+.over-auto{
+    overflow: auto;
+}
+

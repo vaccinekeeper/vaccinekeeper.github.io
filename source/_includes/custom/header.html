@@ -1,6 +1,15 @@
+{% comment %}
+<!-- need a liquid comment in addition to html comment
 <hgroup>
   <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
   {% if site.subtitle %}
     <h2>{{ site.subtitle }}</h2>
   {% endif %}
+  <nav role="navigation">{% include navigation.html %}</nav>
 </hgroup>
+-->
+{% endcomment %}
+
+<section class="row">
+    <nav class="top-bar" >{% include custom/navigation.html %}</nav>
+</section>
