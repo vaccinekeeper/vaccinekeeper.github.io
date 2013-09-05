@@ -2,13 +2,86 @@
 //Custom
 
 
+// Type
 
-.vk-button {
+%montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.top-bar-section{
+    @extend %montserrat;
+}
+
+// Need to override Zurbs default header font sizing to control shrinkage on mobile
+
+h1 { 
+    font-size: $h1-font-size - emCalc(13);
+    // color: white;
+    }
+h2 {
+    font-size: $h2-font-size - emCalc(5);
+    // color: white;
+}
+h3 {
+    color: $highlight;
+    font-weight: 700;
+}
+
+@media #{$small} {
+    h1,h2,h3,h4,h5,h6 { line-height: $header-line-height; }
+    h1 { font-size: $h1-font-size; }
+    h2 { font-size: $h2-font-size;}
+}
+
+
+
+
+
+// Sign up button
+
+
+.sign-up-button {
     @include button-base;
     @include button-size;
-    @include button-style($nice-blue, 0, false);
-
+    @include button-style($primary, 0, false);
 }
+.sign-up-container{
+    text-align: center;
+    
+    @media #{$small} {
+    // text-align: left;
+        padding-top:33px;
+    }
+}
+
+
+// Block styling
+
+.logo{
+    margin-left:$column-gutter/2;
+    
+    margin-top:17px;
+
+    @media #{$small} {
+        margin-top:6px;
+    }
+}
+
+h1.logo-text {
+    @extend %montserrat;
+    color: $second-section;
+    padding-left:$column-gutter/2;
+
+    em {
+        color: $primary;
+    }
+}
+
 
 
 @mixin box-shadow($right:0px, $down:5px, $blur:20px, $offset:0px, $color: rgba(0,0,0,0.75), $inset:"") {
@@ -18,14 +91,60 @@
     box-shadow: $right $down $blur $offset $color unquote($inset);
 }
 
-.video-shadow{
-    @include box-shadow;
+.vimeo{
+    background:white;
 }
+.flex-video{
+    margin-bottom: 0px;
+}
+
+.video-shadow{
+    background: $most-text;
+
+    // This is confusing but the default is for mobile, "small" is for tablets and up, "medium" is for medium and up.
+    // That's what "mobile first" means
+    
+    padding: 0;
+
+    @media #{$small} {
+        padding: $column-gutter $column-gutter 0 $column-gutter;
+        @include border-top-radius($column-gutter);
+    }
+}
+
 .inner-shadow{
-    @include box-shadow(0, 3px, 3px, -3px, rgba(0,0,0,0.75), inset);
+    @include box-shadow(0, 10px, 10px, -5px, rgba(0,0,0,0.2), inset);
 }
 
 .over-auto{
     overflow: auto;
 }
+
+.main {
+    background: image-url($def-overlay) $primary;
+}
+
+
+
+.second{
+    color: white;
+    background: $second-section;
+    h2, p {
+        // text-shadow: 0 -1px 0 lighten($second-section, 5%);
+    }
+}
+
+.second-overlay{
+    // background-image: url("../images/line-tile.png");
+    background: image-url($def-overlay) $second-section;
+}
+
+
+.footer {
+    background: image-url($line-overlay) $most-text;
+    color: white;
+}
+
+
+
 

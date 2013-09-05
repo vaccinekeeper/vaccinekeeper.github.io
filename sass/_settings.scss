@@ -3,6 +3,8 @@
 //
 
 
+
+
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
 $base-font-size: 100% !default;
@@ -50,16 +52,89 @@ $em-base: 16 !default;
 
 // Various global styles
 
-$nice-grey: #65767D;
-$nice-blue: #51BBC9;
+// VK Complement
+$dark-grey: #65727d;
+$bright-blue: #4892d3;
+$lite-blue: #e0edf7;
+$footer-grey: #73716e;
+$orange: #ff9d00;
+
+// Dolores
+$dark-grey: #26393D;
+$bright-blue: #40627C;
+$lite-blue: #FFFAE4;
+$footer-grey: #E8E595;
+$orange: #D0A825;
+
+// Sea Wolf
+$dark-grey: #1E1E20;
+$bright-blue: #374140;
+$lite-blue: #D9CB9E;
+$footer-grey: #2A2C2B;
+$orange: #DC3522;
+
+// sandy stone beach ocean diver
+$dark-grey: #002F2F;
+$bright-blue: #A7A37E;
+$lite-blue: #E6E2AF;
+$footer-grey: #A7A37E;
+$orange: #046380;
+
+// optimist
+$dark-grey: #3E423A;
+$bright-blue: #A4CFBE;
+$lite-blue: #F4F7D9;
+$footer-grey: #6C6E58;
+$orange: #417378;
+
+// Cote Azur
+$dark-grey: #3D3C30;
+$bright-blue: #00585F;
+$lite-blue: #FFFCC4;
+$footer-grey: #009393;
+$orange: #FF3800;
+
+
+$most-text: $dark-grey;
+$primary: $bright-blue;
+$second-section: $lite-blue;
+$footer: $footer-grey;
+$highlight: $orange;
+
+// Primaries plus Bisquit
+
+$most-text: #1B2629;
+$primary: #2D7080;
+$second-section: #D9B836;
+$footer: #D9B836;
+$highlight: #992420;
+
+// Primaries
+
+$most-text: #282825;
+$primary: #B70013;
+$second-section: #19818D;
+$footer: #E7E3C8;
+$highlight: #FFC200;
+
+
+
+
+
+
+$def-overlay: "overlay-transparent.png";
+$line-overlay: "line-tile.png";
+$lite-overlay: "noise.png";
+
+
 
 $default-float: left;
 
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
-// $body-font-style: normal;
+$body-bg: #fff;
+$body-font-color: $most-text;
+$body-font-family: "Open Sans", sans-serif;
+$body-font-weight: 300;
+$body-font-style: normal;
 
 // Font-smoothing
 
@@ -142,7 +217,9 @@ $default-float: left;
 //
 
 $row-width: emCalc(1000);
-$column-gutter: emCalc(60);
+$column-gutter: emCalc(30);
+// $column-gutter: emCalc(30);
+
 $total-columns: 12;
 
 $one-column-width: $row-width / $total-columns;
@@ -166,16 +243,21 @@ $one-column-width: $row-width / $total-columns;
 
 // Control header font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font-weight: 300;
-// $header-font-style: normal;
-$header-font-color: $nice-grey;
+$header-font-family: "Quicksand", sans-serif;
+$header-font-weight: 400;
+$header-font-style: normal;
+$header-font-color: white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
+
+$h1-font-size: emCalc(37);
+$h2-font-size: emCalc(27);
+$h3-font-size: emCalc(23);
+$h4-font-size: emCalc(18);
 
 // $h1-font-size: emCalc(44);
 // $h2-font-size: emCalc(37);
@@ -188,7 +270,7 @@ $header-font-color: $nice-grey;
 
 // $subheader-line-height: 1.4;
 // $subheader-font-color: lighten($header-font-color, 30%);
-$subheader-font-color: $nice-grey;
+$subheader-font-color: $most-text;
 
 // $subheader-font-weight: 300;
 // $subheader-top-margin: .2em;
@@ -196,8 +278,8 @@ $subheader-font-color: $nice-grey;
 
 // A general <small> styling
 
-$small-font-size: 84%;
-$small-font-color: #fff;
+$small-font-size: 80%;
+$small-font-color: inherit;
 
 // Style paragraphs
 
@@ -360,7 +442,7 @@ $small-font-color: #fff;
 // We use this to control the display property.
 
 // $button-display: inline-block;
-// $button-margin-bottom: emCalc(20);
+$button-margin-bottom: emCalc(20);
 
 // We use these to control button text styles.
 
@@ -371,7 +453,7 @@ $small-font-color: #fff;
 // $button-font-tny: emCalc(11);
 // $button-font-sml: emCalc(13);
 // $button-font-lrg: emCalc(20);
-// $button-font-weight: bold;
+$button-font-weight: normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -1264,15 +1346,15 @@ $topbar-margin-bottom: 0;
 // Style the top bar dropdown elements
 
 // $topbar-dropdown-bg: #222;
-$topbar-dropdown-link-color: $nice-grey;
+$topbar-dropdown-link-color: $second-section;
 // $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size: 5px;
-$topbar-dropdown-toggle-color: $nice-grey;
+$topbar-dropdown-toggle-color: $most-text;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: $nice-grey;
+$topbar-link-color: $second-section;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;
@@ -1291,8 +1373,8 @@ $topbar-link-color: $nice-grey;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: emCalc(13);
 // $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: $nice-grey;
-$topbar-menu-icon-color: $nice-grey;
+$topbar-menu-link-color: $most-text;
+$topbar-menu-icon-color: $most-text;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

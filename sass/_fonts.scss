@@ -1,0 +1,7 @@
+@import "compass/css3";
+
+@include font-face("Open Sans", font-files("assets/fonts/OpenSans-Light.ttf", truetype),"",300, normal);
+@include font-face("Quicksand", font-files("assets/fonts/Quicksand-Regular.ttf", truetype),"",400, normal);
+@include font-face("Quicksand", font-files("assets/fonts/Quicksand-Bold.ttf", truetype),"",700, normal);
+@include font-face("Montserrat", font-files("assets/fonts/Montserrat-Regular.ttf"),"",400, normal);
+
