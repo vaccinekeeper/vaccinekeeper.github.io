@@ -17,7 +17,7 @@ images_dir = "source/images"
 fonts_dir = "source/fonts"
 
 line_comments = false
-output_style = :compressed
+output_style = :expanded
 
 # https://github.com/chriseppstein/compass/issues/1108
 sass_options = {:sourcemap => true}

@@ -11,27 +11,27 @@ This blog runs on [Octopress](http://octopress.org/), a framework for [Jekyll](h
 and is hosted on [GitHub Pages](http://pages.github.com/). I've also set it up on [Cloud9](https://c9.io/), a
 sweet web app IDE that enables you to write blog posts on any device.
 
-Having done a bit of research, when it comes down to blogging solutions, you've either got php based CMS's
-such as [WordPress](http://wordpress.org/) or static site generators like Jekyll. I've used Wordpress before
-but it's functionality has always irritated me, it's too bloated for what I need and I couldn't be bothered 
-dealing with a database.
+Having done a bit of research, when it comes down to blogging solutions, you either have php based CMS's
+such as [WordPress](http://wordpress.org/), Drupal, Joomla or static site generators like Jekyll. I've used Wordpress before
+but it's functionality has always irritated me, probably because my php is awful, it's too bloated for what I need 
+and don't want to use a database for various reasons.
 
-Jekyll has all the functionality I need from a blog but doesn't have a database, which is great as it 
+<!-- more -->
+
+Jekyll has all the functionality I need from a blog but without a database. This is great as it 
 means I can host it out of static locations such as GitHub Pages or [Amazon S3](http://aws.amazon.com/s3/). 
 Not only are these services free, at least for now, but they should be more robust than your random 
 shared web hosting provider.
 
 Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make life
-easier I turned to Octopress, an establish framework that takes care of all the pain and has several decent 
-themes to hack.
+easier I turned to Octopress, an establish framework that takes care of some pain.
 
 The only thing missing with Octopress / Jekyll is it doesn't have a web interface for when I'm on the go,
 so that's why I plugged it into Cloud9. Not only does Cloud9 give you an IDE, they also give you a
-Ruby virtual machine.
+Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9.
 
 Getting it running wasn't completely trivial so I figure this could be a useful blog post for those that are into this kind of thing!
 
-<!-- more -->
 
 #### 0. Open a GitHub account and set up a public SSH key that you can use with Cloud9
 

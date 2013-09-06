@@ -97,7 +97,7 @@ $orange: #FF3800;
 
 $most-text: $dark-grey;
 $primary: $bright-blue;
-$second-section: $lite-blue;
+$secondary: $lite-blue;
 $footer: $footer-grey;
 $highlight: $orange;
 
@@ -105,18 +105,17 @@ $highlight: $orange;
 
 $most-text: #1B2629;
 $primary: #2D7080;
-$second-section: #D9B836;
+$secondary: #D9B836;
 $footer: #D9B836;
 $highlight: #992420;
 
 // Primaries
 
-$most-text: #282825;
-$primary: #B70013;
-$second-section: #19818D;
-$footer: #E7E3C8;
-$highlight: #FFC200;
-
+$most-text: #332B29;
+$primary: #5883D3;
+$secondary: #52E088;
+$footer: #515052;
+$highlight: #FFF74B;
 
 
 
@@ -315,7 +314,7 @@ $small-font-color: inherit;
 // Style lists
 
 // $list-style-position: outside;
-// $list-side-margin: 0;
+$list-side-margin: emCalc(20);
 // $list-nested-margin: emCalc(20);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
@@ -1341,12 +1340,12 @@ $topbar-margin-bottom: 0;
 // Controlling the styles for the title in the top bar
 
 // $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17);
+$topbar-title-font-size: $h3-font-size;
 
 // Style the top bar dropdown elements
 
 // $topbar-dropdown-bg: #222;
-$topbar-dropdown-link-color: $second-section;
+$topbar-dropdown-link-color: $secondary;
 // $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: $most-text;
@@ -1354,7 +1353,7 @@ $topbar-dropdown-toggle-color: $most-text;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: $second-section;
+$topbar-link-color: $primary;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;

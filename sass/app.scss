@@ -1,5 +1,6 @@
 // Global Foundation Settings
 
+// Fonts are up front because they are used in settings
 @import "fonts";
 
 
@@ -13,6 +14,8 @@
 
 // Add custom
 @import "custom";
+
+@import "foundation-icons";
 
 
 // Import specific parts of Foundation by commenting the import "foundation"

@@ -2,7 +2,7 @@
 //Custom
 
 
-// Type
+//*********** Type
 
 %montserrat {
   font-family: "Montserrat", sans-serif;
@@ -10,27 +10,16 @@
   font-style: normal;
 }
 
-
-
-
 .top-bar-section{
     @extend %montserrat;
 }
 
-// Need to override Zurbs default header font sizing to control shrinkage on mobile
+// Need to override Zurbs default header font sizing to control shrinkage on mobile. 
+// Remember, default i.e. without a media query is mobile, $media #{$small} are small screens and above
 
-h1 { 
-    font-size: $h1-font-size - emCalc(13);
-    // color: white;
-    }
-h2 {
-    font-size: $h2-font-size - emCalc(5);
-    // color: white;
-}
-h3 {
-    color: $highlight;
-    font-weight: 700;
-}
+h1 {font-size: $h1-font-size - emCalc(13);}
+h2 {font-size: $h2-font-size - emCalc(5);}
+h3 {color: $highlight; font-weight: 700;}
 
 @media #{$small} {
     h1,h2,h3,h4,h5,h6 { line-height: $header-line-height; }
@@ -39,28 +28,23 @@ h3 {
 }
 
 
-
-
-
-// Sign up button
-
-
-.sign-up-button {
-    @include button-base;
-    @include button-size;
-    @include button-style($primary, 0, false);
-}
-.sign-up-container{
+.inline-list.social-icons{
     text-align: center;
     
-    @media #{$small} {
-    // text-align: left;
-        padding-top:33px;
+    li {
+        display: inline-block;
     }
 }
 
+a {
+    color: $primary;
+}
 
-// Block styling
+li:after {
+}
+
+
+//************** Block styling
 
 .logo{
     margin-left:$column-gutter/2;
@@ -73,13 +57,21 @@ h3 {
 }
 
 h1.logo-text {
+
     @extend %montserrat;
-    color: $second-section;
+    color: $primary;
+    
+    
     padding-left:$column-gutter/2;
 
     em {
-        color: $primary;
-    }
+        color: $highlight;
+    };
+    
+    i {
+        color: $secondary;
+        font-size: 24px;
+    };
 }
 
 
@@ -124,19 +116,13 @@ h1.logo-text {
     background: image-url($def-overlay) $primary;
 }
 
-
-
 .second{
     color: white;
-    background: $second-section;
-    h2, p {
-        // text-shadow: 0 -1px 0 lighten($second-section, 5%);
-    }
+    background: $secondary;
 }
 
 .second-overlay{
-    // background-image: url("../images/line-tile.png");
-    background: image-url($def-overlay) $second-section;
+    background: image-url($def-overlay) $secondary;
 }
 
 
@@ -144,6 +130,26 @@ h1.logo-text {
     background: image-url($line-overlay) $most-text;
     color: white;
 }
+
+
+
+//******** Sign up button
+
+
+.sign-up-button {
+    @include button-base;
+    @include button-size;
+    @include button-style($primary, 0, false);
+}
+.sign-up-container{
+    text-align: center;
+    
+    @media #{$small} {
+    // text-align: left;
+        padding-top:33px;
+    }
+}
+
 
 
 
