@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[VaccineKeeper]]></title>
+  <link href="http://vaccinekeeper.github.io/atom.xml" rel="self"/>
+  <link href="http://vaccinekeeper.github.io/"/>
+  <updated>2013-09-08T11:37:51-04:00</updated>
+  <id>http://vaccinekeeper.github.io/</id>
+  <author>
+    <name><![CDATA[Michael Janiak]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[test second]]></title>
+    <link href="http://vaccinekeeper.github.io/blog/2013/08/28/test-second/"/>
+    <updated>2013-08-28T17:51:00-04:00</updated>
+    <id>http://vaccinekeeper.github.io/blog/2013/08/28/test-second</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress with Github Pages and Cloud9]]></title>
+    <link href="http://vaccinekeeper.github.io/blog/2013/08/22/octopress-with-github-pages-and-cloud9/"/>
+    <updated>2013-08-22T14:35:00-04:00</updated>
+    <id>http://vaccinekeeper.github.io/blog/2013/08/22/octopress-with-github-pages-and-cloud9</id>
+    <content type="html"><![CDATA[<p>This blog runs on <a href="http://octopress.org/">Octopress</a>, a framework for <a href="https://github.com/mojombo/jekyll">Jekyll</a>
+and is hosted on <a href="http://pages.github.com/">GitHub Pages</a>. I&rsquo;ve also set it up on <a href="https://c9.io/">Cloud9</a>, a
+useful web IDE that enables you to write blog posts on any device.</p>
+
+<p>Having done a bit of research, when it comes down to blogging solutions, you either have php based CMS&rsquo;s
+such as <a href="http://wordpress.org/">WordPress</a>, Drupal, Joomla or static site generators like Jekyll. I&rsquo;ve used Wordpress before
+but it&rsquo;s functionality has always irritated me, probably because my php is awful, it&rsquo;s too bloated for what I need
+and don&rsquo;t want to use a database for various reasons.</p>
+
+<!-- more -->
+
+
+<p>Jekyll has all the functionality I need from a blog but without a database, which
+means I can host it from a static hosting service like GitHub Pages or <a href="http://aws.amazon.com/s3/">Amazon S3</a>.
+Not only are these services free, at least for now, but they should be more robust than your random
+shared web hosting provider.</p>
+
+<p>Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make life
+easier I turned to Octopress, an establish framework that takes care of some pain.</p>
+
+<p>The only thing missing with Octopress / Jekyll is it doesn&rsquo;t have a web interface for when I&rsquo;m on the go,
+so that&rsquo;s why I plugged it into Cloud9. In addition to an IDE, Cloud9 also provides a
+Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9.</p>
+
+<p>Getting it running wasn&rsquo;t completely trivial so I figure this could be a useful blog post for those that are into this kind of thing.</p>
+
+<hr/>
+
+
+<h4>0. Open a GitHub account and set up a public SSH key that you can use with Cloud9</h4>
+
+<p>Out of scope for this blog but there are plenty of instructions floating around on the web,
+including those <a href="https://help.github.com/articles/generating-ssh-keys">straight from the horses mouth</a>.</p>
+
+<hr/>
+
+
+<h4>1. Create a repository for the GitHub Pages hosted website</h4>
+
+<p>Decide on an <a href="https://help.github.com/articles/user-organization-and-project-pages">organization or project page</a>. I went with an organization page,
+so if you want to set that up on your GitHub account go to the GitHub
+<a href="https://github.com/account/organizations/new">new organization page</a>.</p>
+
+<p>Create a repository for your website. The naming convention is important, it must be <code>organization.github.io</code> or <code>user.github.io</code>.
+I&rsquo;ve seen .com work too. So <code>organization.github.io</code> will output a website at: <code>http://organization.github.io</code>.
+No need to create a README or put anything in the repository for now.</p>
+
+<hr/>
+
+
+<h4>2. Open a Cloud9 account and create a workspace with Octopress on it</h4>
+
+<p>Go to <a href="c9.io">Cloud9</a> and login with your github account. Click on the &ldquo;Create new workspace&rdquo; button, then select &ldquo;clone from URL&rdquo;.
+Use the following url <code>git://github.com/imathis/octopress.git</code> and name it whatever you want.</p>
+
+<hr/>
+
+
+<h4>3. Set Octopress up within Cloud9</h4>
+
+<p>Click on your Octopress project and hit the &ldquo;start editing&rdquo; button. You don&rsquo;t really need to do this but you can check
+the ruby version just in case, it should be 1.9.3.</p>
+
+<pre><code>ruby --version
+</code></pre>
+
+<br/>
+
+
+<p>install the bundler dependency manager</p>
+
+<pre><code>gem install bundler
+</code></pre>
+
+<br/>
+
+
+<p>install dependencies specified in Gemfile</p>
+
+<pre><code>bundle install
+</code></pre>
+
+<br/>
+
+
+<p>Octopress has its own Ruby <a href="http://rake.rubyforge.org/doc/rakefile_rdoc.html">Rakefile</a> with a whole bunch of extremely useful tasks.
+It&rsquo;s pretty awesome, just type <code>rake -T</code> into the terminal to see a list of commands.</p>
+
+<p>First up, install the default theme</p>
+
+<pre><code>rake install
+</code></pre>
+
+<br/>
+
+
+<hr/>
+
+
+<h4>4. At this stage you can generate your blog and view a preview or you can go straight to 5</h4>
+
+<p>Unlike Wordpress, which actively pulls your posts out of a database, Jekyll parses your source files then uses that information
+to generate a static version of your website. Every time you make a change to the source, that is write a new page or blog post,
+you need to generate a new blog. <a href="http://jekyllbootstrap.com/lessons/jekyll-introduction.html">More here</a>.</p>
+
+<p>Run the Octopress blog generator</p>
+
+<pre><code>rake generate
+</code></pre>
+
+<br/>
+
+
+<p>If you run the preview now you will get <code>Error: you may be using the wrong PORT &amp; HOST for your server app</code></p>
+
+<p>To fix that, <a href="http://www.devopsy.com/blog/2012/10/04/octopress-on-cloud9/">edit the Rakefile</a>:</p>
+
+<pre><code># server_port     = "4000"      # Find this line and replace it with the lines below
+server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
+server_port     = ENV['PORT'] ||= "4000"      # port for preview server eg. localhost:4000
+# rackupPid = Process.spawn("rackup --port #{server_port}")
+rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
+</code></pre>
+
+<br/>
+
+
+<p>New you can view a preview at <code>http://workspace.accountname.c9.io</code> just type</p>
+
+<pre><code>rake preview
+</code></pre>
+
+<br/>
+
+
+<hr/>
+
+
+<h4>5. Get your blog ready for GitHub pages</h4>
+
+<p>Octopress gives you a single command for setting up on GitHub pages that does lots of useful things,
+<a href="http://octopress.org/docs/deploying/github">read more here</a></p>
+
+<pre><code>rake setup_github_pages
+</code></pre>
+
+<p>You will need to enter your repository url <code>git@github.com:organization/organization.github.io.git</code></p>
+
+<p>Your source is now on your &ldquo;source&rdquo; branch, while your blog is on the &ldquo;master&rdquo; branch</p>
+
+<hr/>
+
+
+<h4>6. Deploy and commit everything to GitHub</h4>
+
+<p>Generate your blog content (if you skipped step 4)</p>
+
+<pre><code>rake generate
+</code></pre>
+
+<br/>
+
+
+<p>Deploy the master branch, that is the static assets for your blog onto GitHub using Octopress&#8217; deploy command</p>
+
+<pre><code>rake deploy
+</code></pre>
+
+<br/> 
+
+
+<p>Commit the source branch to GitHub</p>
+
+<pre><code>git add .
+git commit -m 'source commit'
+git push origin source
+</code></pre>
+
+<br/>
+
+
+<p>Now if you go to your repository at <code>github.com/organization/organization.github.io</code> you will notice that
+you have two branches, a master branch and a source and if you go to <code>http://organization.github.io/</code>
+you have your blog!</p>
+
+<hr/>
+
+
+<h4>7. Start <a href="http://octopress.org/docs/blogging/">blogging with Octopress</a></h4>
+
+<pre><code>rake new_post["Octopress rulez"]
+rake generate
+</code></pre>
+
+<br/>
+
+
+<p>then preview or deploy</p>
+
+<pre><code>rake preview
+rake deploy
+</code></pre>
+
+<br/>
+
+
+<p>And remember to commit the source</p>
+
+<pre><code>git add .
+git commit -m 'source commit'
+git push origin source
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

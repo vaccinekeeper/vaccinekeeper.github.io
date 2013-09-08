@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://vaccinekeeper.github.io/sitemap.xml 
