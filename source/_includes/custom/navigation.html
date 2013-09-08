@@ -3,16 +3,19 @@
 <!--        <a href="{{ root_url }}/">
             <img class="logo" src="images/Vaccine-Keeper-logo-small.png" data-interchange="[images/Vaccine-Keeper-logo-large.png, (small)]" alt="Vaccine Keeper logo">
         </a>-->
-        <h1 class="logo-text"><i class="fi-clipboard"></i> Vaccine Keeper <em>kids</em></h1>
+        <a href="{{ root_url }}/"><h1 class="logo-text"><i class="fi-clipboard"></i> Vaccine Keeper <em>kids</em></h1></a>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
 </ul>
 
 <section class="top-bar-section">
     <ul class="right">
+        {% if page.url != "/index.html" %}
+            <li><a href="{{ root_url }}/">Home</a></li>
+        {% endif %}
+        <li><a href="{{root_url}}/#kids"><em>Kids</em></a></li>
         <li><a href="{{root_url}}/blog">Blog</a></li>
-        <li><a href="{{root_url}}/about">About</a></li>
-        <li><a href="{{root_url}}/team">The team</a></li>
+        <li><a href="{{root_url}}/#team">About us</a></li>
     </ul>
 </section>
 

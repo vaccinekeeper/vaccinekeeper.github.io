@@ -1,0 +1,10 @@
+// For octopress
+$noise-bg: image-url('line-tile.png') top left !default;
+$img-border: inline-image('dotted-border.png') !default;
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+.mono { font-family: $mono; };
+$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+.sans { font-family: $sans; }
+
+// Octopress needs a link color ... foundation calls it "anchor", set it the same as "secondary"
+$link-color: #72AFAA;

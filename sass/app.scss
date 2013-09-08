@@ -3,7 +3,10 @@
 // Fonts are up front because they are used in settings
 @import "fonts";
 
+@import "octopress";
 
+
+// Settings go second because they change settings in foundation
 @import "settings";
 
 // Comment out this import if you don't want to use normalize
@@ -13,9 +16,12 @@
 @import "foundation";
 
 // Add custom
-@import "custom";
+
 
 @import "foundation-icons";
+
+
+@import "custom";
 
 
 // Import specific parts of Foundation by commenting the import "foundation"

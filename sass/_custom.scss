@@ -2,6 +2,7 @@
 //Custom
 
 
+
 //*********** Type
 
 %montserrat {
@@ -18,8 +19,22 @@
 // Remember, default i.e. without a media query is mobile, $media #{$small} are small screens and above
 
 h1 {font-size: $h1-font-size - emCalc(13);}
-h2 {font-size: $h2-font-size - emCalc(5);}
-h3 {color: $highlight; font-weight: 700;}
+h2 {
+    font-size: $h2-font-size - emCalc(5);
+    a{color: $tertiary;}
+}
+h4 {font-size: $h4-font-size;}
+
+
+.second {
+    h1 {color: white};
+    h2, h3, h4 {color: $highlight;}
+}
+
+.third {
+    h1, h2, h3 {color: white};
+}
+
 
 @media #{$small} {
     h1,h2,h3,h4,h5,h6 { line-height: $header-line-height; }
@@ -36,12 +51,6 @@ h3 {color: $highlight; font-weight: 700;}
     }
 }
 
-a {
-    color: $primary;
-}
-
-li:after {
-}
 
 
 //************** Block styling
@@ -59,13 +68,13 @@ li:after {
 h1.logo-text {
 
     @extend %montserrat;
-    color: $primary;
+    color: $tertiary;
     
     
     padding-left:$column-gutter/2;
 
     em {
-        color: $highlight;
+        color: $secondary;
     };
     
     i {
@@ -91,7 +100,7 @@ h1.logo-text {
 }
 
 .video-shadow{
-    background: $most-text;
+    background: $tertiary;
 
     // This is confusing but the default is for mobile, "small" is for tablets and up, "medium" is for medium and up.
     // That's what "mobile first" means
@@ -118,11 +127,12 @@ h1.logo-text {
 
 .second{
     color: white;
-    background: $secondary;
+    background: image-url($def-overlay) $secondary;
 }
 
-.second-overlay{
-    background: image-url($def-overlay) $secondary;
+.third{
+    color: white;
+    background: image-url($def-overlay) $tertiary;
 }
 
 
@@ -139,7 +149,7 @@ h1.logo-text {
 .sign-up-button {
     @include button-base;
     @include button-size;
-    @include button-style($primary, 0, false);
+    @include button-style($tertiary, 0, false);
 }
 .sign-up-container{
     text-align: center;

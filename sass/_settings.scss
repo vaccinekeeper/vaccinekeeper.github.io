@@ -50,72 +50,14 @@ $em-base: 16 !default;
 // Change whether or not you include browser prefixes
 // $experimental: true;
 
-// Various global styles
-
-// VK Complement
-$dark-grey: #65727d;
-$bright-blue: #4892d3;
-$lite-blue: #e0edf7;
-$footer-grey: #73716e;
-$orange: #ff9d00;
-
-// Dolores
-$dark-grey: #26393D;
-$bright-blue: #40627C;
-$lite-blue: #FFFAE4;
-$footer-grey: #E8E595;
-$orange: #D0A825;
-
-// Sea Wolf
-$dark-grey: #1E1E20;
-$bright-blue: #374140;
-$lite-blue: #D9CB9E;
-$footer-grey: #2A2C2B;
-$orange: #DC3522;
-
-// sandy stone beach ocean diver
-$dark-grey: #002F2F;
-$bright-blue: #A7A37E;
-$lite-blue: #E6E2AF;
-$footer-grey: #A7A37E;
-$orange: #046380;
-
-// optimist
-$dark-grey: #3E423A;
-$bright-blue: #A4CFBE;
-$lite-blue: #F4F7D9;
-$footer-grey: #6C6E58;
-$orange: #417378;
-
-// Cote Azur
-$dark-grey: #3D3C30;
-$bright-blue: #00585F;
-$lite-blue: #FFFCC4;
-$footer-grey: #009393;
-$orange: #FF3800;
-
-
-$most-text: $dark-grey;
-$primary: $bright-blue;
-$secondary: $lite-blue;
-$footer: $footer-grey;
-$highlight: $orange;
-
-// Primaries plus Bisquit
-
-$most-text: #1B2629;
-$primary: #2D7080;
-$secondary: #D9B836;
-$footer: #D9B836;
-$highlight: #992420;
 
 // Primaries
 
-$most-text: #332B29;
-$primary: #5883D3;
-$secondary: #52E088;
-$footer: #515052;
-$highlight: #FFF74B;
+$most-text: #282825; //Dark
+$primary: #DDD1BA; // Light brown
+$secondary: #72AFAA; // Greenish
+$tertiary: #C4665C; // Redish
+$highlight: #EFCA95; //Gold
 
 
 
@@ -245,7 +187,7 @@ $one-column-width: $row-width / $total-columns;
 $header-font-family: "Quicksand", sans-serif;
 $header-font-weight: 400;
 $header-font-style: normal;
-$header-font-color: white;
+$header-font-color: $tertiary;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
@@ -294,15 +236,15 @@ $small-font-color: inherit;
 
 // Style <code> tags
 
-// $code-color: darken($alert-color, 15%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: bold;
+$code-color: $pre-color;
+$code-font-family: $mono;
+$code-font-weight: normal;
 
 // Style anchors
 
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: darken($primary-color, 5%);
+$anchor-font-color: $link-color;
+$anchor-font-color-hover: darken($link-color, 20%);
 
 // Style the <hr> element
 
@@ -1353,7 +1295,7 @@ $topbar-dropdown-toggle-color: $most-text;
 
 // Set the link colors and styles for top-level nav
 
-$topbar-link-color: $primary;
+$topbar-link-color: $most-text;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 // $topbar-link-weight: bold;

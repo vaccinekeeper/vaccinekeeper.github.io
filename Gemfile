@@ -16,7 +16,8 @@ group :development do
   gem 'liquid', '~> 2.3.0'
   gem 'zurb-foundation', '4.3'
   gem 'webrick', '~> 1.3.1' # explicit dependency added to remove error
-  gem 'rb-inotify', '~> 0.9' # a dependency error I was getting when using sass for previews
+  gem 'rb-inotify', '~> 0.9' # a dependency error I was getting when using sass for 
+  gem 'rubypython' # for pygments
 end
 
 gem 'sinatra', '~> 1.4.2'
