@@ -20,15 +20,15 @@ and don't want to use a database for various reasons.
 
 Jekyll has all the functionality I need from a blog but without a database, which 
 means I can host it from a static hosting service like GitHub Pages or [Amazon S3](http://aws.amazon.com/s3/). 
-Not only are these services free, at least for now, but they should be more robust than your random 
+Not only are these services more or less free but they should be more robust than your random 
 shared web hosting provider.
 
 Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make life
 easier I turned to Octopress, an establish framework that takes care of some pain.
 
 The only thing missing with Octopress / Jekyll is it doesn't have a web interface for when I'm on the go,
-so that's why I plugged it into Cloud9. In addition to an IDE, Cloud9 also provides a
-Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9.
+so that's why I plugged it into Cloud9. In addition to an IDE, Cloud9 provides a
+Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9. Win.
 
 Getting it running wasn't completely trivial so I figure this could be a useful blog post for those that are into this kind of thing.
 <hr/>
@@ -46,7 +46,7 @@ so if you want to set that up on your GitHub account go to the GitHub
 [new organization page](https://github.com/account/organizations/new).
 
 Create a repository for your website. The naming convention is important, it must be `organization.github.io` or `user.github.io`. 
-I've seen .com work too. So `organization.github.io` will output a website at: `http://organization.github.io`.
+I've seen `.com` work too. So `organization.github.io` will output a website at: `http://organization.github.io`.
 No need to create a README or put anything in the repository for now.
 <hr/>
 
@@ -62,24 +62,20 @@ Click on your Octopress project and hit the "start editing" button. You don't re
 the ruby version just in case, it should be 1.9.3.
     ruby --version
 
-<br/>
 install the bundler dependency manager
 
     gem install bundler
 
-<br/>
 install dependencies specified in Gemfile
 
     bundle install
 
-<br/>
 Octopress has its own Ruby [Rakefile](http://rake.rubyforge.org/doc/rakefile_rdoc.html) with a whole bunch of extremely useful tasks.
 It's pretty awesome, just type `rake -T` into the terminal to see a list of commands.
 
 First up, install the default theme
     rake install
 
-<br/>
 <hr/>
 
 #### 4. At this stage you can generate your blog and view a preview or you can go straight to 5
@@ -91,23 +87,19 @@ you need to generate a new blog. [More here](http://jekyllbootstrap.com/lessons/
 Run the Octopress blog generator
     rake generate
 
-<br/>
 If you run the preview now you will get `Error: you may be using the wrong PORT & HOST for your server app`
 
 To fix that, [edit the Rakefile](http://www.devopsy.com/blog/2012/10/04/octopress-on-cloud9/):
 
     # server_port     = "4000"      # Find this line and replace it with the lines below
-    server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
-    server_port     = ENV['PORT'] ||= "4000"      # port for preview server eg. localhost:4000
+    server_host     = ENV['IP'] ||= '0.0.0.0' # server bind address for preview server
+    server_port     = ENV['PORT'] ||= "4000"  # port for preview server eg. localhost:4000
     # rackupPid = Process.spawn("rackup --port #{server_port}")
     rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
-
-<br/>
 
 New you can view a preview at `http://workspace.accountname.c9.io` just type
     rake preview
 
-<br/>
 <hr/>
 
 #### 5. Get your blog ready for GitHub pages
@@ -126,18 +118,18 @@ Your source is now on your "source" branch, while your blog is on the "master" b
 Generate your blog content (if you skipped step 4)
 
     rake generate
-<br/>
+
 Deploy the master branch, that is the static assets for your blog onto GitHub using Octopress' deploy command
 
     rake deploy
-<br/> 
+
 Commit the source branch to GitHub
 
     git add .
     git commit -m 'source commit'
     git push origin source
 
-<br/>
+
 Now if you go to your repository at `github.com/organization/organization.github.io` you will notice that
 you have two branches, a master branch and a source and if you go to `http://organization.github.io/`
 you have your blog!
@@ -147,11 +139,11 @@ you have your blog!
 
     rake new_post["Octopress rulez"]
     rake generate
-<br/>
+
 then preview or deploy
     rake preview
     rake deploy
-<br/>
+
 And remember to commit the source
     git add .
     git commit -m 'source commit'

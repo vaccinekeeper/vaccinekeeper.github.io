@@ -1,21 +1,24 @@
 // Global Foundation Settings
 
+// Normalize between browers apparently
+@import "normalize";
+
 // Fonts are up front because they are used in settings
 @import "fonts";
 
-@import "octopress";
+// Solarized is imported before settings because it defines a few colors needed in settings
+@import "octopress/solarized";
 
-
-// Settings go second because they change settings in foundation
+// Settings go before foundation because you need to define variables used by foundation
 @import "settings";
 
-// Comment out this import if you don't want to use normalize
-@import "normalize";
-
 // Comment out this import if you are customizing you imports below
+// Annoyingly foundation does its own resets e.g. on padding, so any subsequent imports need to go after foundation to override that
 @import "foundation";
 
 // Add custom
+
+@import "octopress";
 
 
 @import "foundation-icons";
