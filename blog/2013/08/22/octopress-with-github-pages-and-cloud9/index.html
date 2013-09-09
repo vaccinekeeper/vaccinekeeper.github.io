@@ -47,7 +47,7 @@ useful web IDE that enables &hellip;">
     <nav class="top-bar" ><ul class="title-area">
     <li class="name">
         <a href="/">
-            <img class="logo" src="images/Vaccine-Keeper-logo-small.png" data-interchange="[images/Vaccine-Keeper-logo-large.png, (small)]" alt="Vaccine Keeper logo">
+            <img class="logo" src="/images/Vaccine-Keeper-logo-small.png" data-interchange="[/images/Vaccine-Keeper-logo-large.png, (small)]" alt="Vaccine Keeper logo">
         </a>
 <!--        <a href="/"><h1 class="logo-text"><i class="fi-clipboard"></i> Vaccine Keeper <em>kids</em></h1></a>
 -->    </li>
@@ -120,15 +120,15 @@ and don&rsquo;t want to use a database for various reasons.</p>
 
 <p>Jekyll has all the functionality I need from a blog but without a database, which
 means I can host it from a static hosting service like GitHub Pages or <a href="http://aws.amazon.com/s3/">Amazon S3</a>.
-Not only are these services free, at least for now, but they should be more robust than your random
+Not only are these services more or less free but they should be more robust than your random
 shared web hosting provider.</p>
 
 <p>Jekyll by itself is bare bones, you need to create your own directory structure, templates etc, so to make life
 easier I turned to Octopress, an establish framework that takes care of some pain.</p>
 
 <p>The only thing missing with Octopress / Jekyll is it doesn&rsquo;t have a web interface for when I&rsquo;m on the go,
-so that&rsquo;s why I plugged it into Cloud9. In addition to an IDE, Cloud9 also provides a
-Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9.</p>
+so that&rsquo;s why I plugged it into Cloud9. In addition to an IDE, Cloud9 provides a
+Ruby virtual machine. Jekyll runs on Ruby, so this means I can do 100% of the setup from Cloud9. Win.</p>
 
 <p>Getting it running wasn&rsquo;t completely trivial so I figure this could be a useful blog post for those that are into this kind of thing.</p>
 
@@ -150,7 +150,7 @@ so if you want to set that up on your GitHub account go to the GitHub
 <a href="https://github.com/account/organizations/new">new organization page</a>.</p>
 
 <p>Create a repository for your website. The naming convention is important, it must be <code>organization.github.io</code> or <code>user.github.io</code>.
-I&rsquo;ve seen .com work too. So <code>organization.github.io</code> will output a website at: <code>http://organization.github.io</code>.
+I&rsquo;ve seen <code>.com</code> work too. So <code>organization.github.io</code> will output a website at: <code>http://organization.github.io</code>.
 No need to create a README or put anything in the repository for now.</p>
 
 <hr/>
@@ -172,24 +172,15 @@ the ruby version just in case, it should be 1.9.3.</p>
 <pre><code>ruby --version
 </code></pre>
 
-<br/>
-
-
 <p>install the bundler dependency manager</p>
 
 <pre><code>gem install bundler
 </code></pre>
 
-<br/>
-
-
 <p>install dependencies specified in Gemfile</p>
 
 <pre><code>bundle install
 </code></pre>
-
-<br/>
-
 
 <p>Octopress has its own Ruby <a href="http://rake.rubyforge.org/doc/rakefile_rdoc.html">Rakefile</a> with a whole bunch of extremely useful tasks.
 It&rsquo;s pretty awesome, just type <code>rake -T</code> into the terminal to see a list of commands.</p>
@@ -198,9 +189,6 @@ It&rsquo;s pretty awesome, just type <code>rake -T</code> into the terminal to s
 
 <pre><code>rake install
 </code></pre>
-
-<br/>
-
 
 <hr/>
 
@@ -216,30 +204,21 @@ you need to generate a new blog. <a href="http://jekyllbootstrap.com/lessons/jek
 <pre><code>rake generate
 </code></pre>
 
-<br/>
-
-
 <p>If you run the preview now you will get <code>Error: you may be using the wrong PORT &amp; HOST for your server app</code></p>
 
 <p>To fix that, <a href="http://www.devopsy.com/blog/2012/10/04/octopress-on-cloud9/">edit the Rakefile</a>:</p>
 
 <pre><code># server_port     = "4000"      # Find this line and replace it with the lines below
-server_host     = ENV['IP'] ||= '0.0.0.0'     # server bind address for preview server
-server_port     = ENV['PORT'] ||= "4000"      # port for preview server eg. localhost:4000
+server_host     = ENV['IP'] ||= '0.0.0.0' # server bind address for preview server
+server_port     = ENV['PORT'] ||= "4000"  # port for preview server eg. localhost:4000
 # rackupPid = Process.spawn("rackup --port #{server_port}")
 rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
 </code></pre>
-
-<br/>
-
 
 <p>New you can view a preview at <code>http://workspace.accountname.c9.io</code> just type</p>
 
 <pre><code>rake preview
 </code></pre>
-
-<br/>
-
 
 <hr/>
 
@@ -266,16 +245,10 @@ rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
 <pre><code>rake generate
 </code></pre>
 
-<br/>
-
-
 <p>Deploy the master branch, that is the static assets for your blog onto GitHub using Octopress&#8217; deploy command</p>
 
 <pre><code>rake deploy
 </code></pre>
-
-<br/> 
-
 
 <p>Commit the source branch to GitHub</p>
 
@@ -283,9 +256,6 @@ rackupPid = Process.spawn("rackup --host #{server_host} --port #{server_port}")
 git commit -m 'source commit'
 git push origin source
 </code></pre>
-
-<br/>
-
 
 <p>Now if you go to your repository at <code>github.com/organization/organization.github.io</code> you will notice that
 you have two branches, a master branch and a source and if you go to <code>http://organization.github.io/</code>
@@ -300,17 +270,11 @@ you have your blog!</p>
 rake generate
 </code></pre>
 
-<br/>
-
-
 <p>then preview or deploy</p>
 
 <pre><code>rake preview
 rake deploy
 </code></pre>
-
-<br/>
-
 
 <p>And remember to commit the source</p>
 
