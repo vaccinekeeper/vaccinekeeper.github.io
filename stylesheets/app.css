@@ -908,7 +908,7 @@ body {
 
 body {
   background: white;
-  color: #282825;
+  color: #535351;
   padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -2180,7 +2180,7 @@ p.lead {
 
 .subheader {
   line-height: 1.4;
-  color: #282825;
+  color: #535351;
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -2372,7 +2372,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #282825;
+  color: #535351;
   border-bottom: 1px dotted #dddddd;
   cursor: help;
 }
@@ -4404,7 +4404,7 @@ label.error {
 }
 .top-bar .name h1 a {
   font-weight: bold;
-  color: #282825;
+  color: #535351;
   width: 50%;
   display: block;
   padding: 0 28.33333px;
@@ -4415,7 +4415,7 @@ label.error {
   top: 0;
 }
 .top-bar .toggle-topbar a {
-  color: #282825;
+  color: #535351;
   text-transform: uppercase;
   font-size: 0.8125em;
   font-weight: bold;
@@ -4437,7 +4437,7 @@ label.error {
   height: 34px;
   line-height: 33px;
   padding: 0;
-  color: #282825;
+  color: #535351;
 }
 .top-bar .toggle-topbar.menu-icon a span {
   position: absolute;
@@ -4445,8 +4445,8 @@ label.error {
   display: block;
   width: 16px;
   height: 0;
-  -webkit-box-shadow: 0 10px 0 1px #282825, 0 16px 0 1px #282825, 0 22px 0 1px #282825;
-  box-shadow: 0 10px 0 1px #282825, 0 16px 0 1px #282825, 0 22px 0 1px #282825;
+  -webkit-box-shadow: 0 10px 0 1px #535351, 0 16px 0 1px #535351, 0 22px 0 1px #535351;
+  box-shadow: 0 10px 0 1px #535351, 0 16px 0 1px #535351, 0 22px 0 1px #535351;
 }
 .top-bar.expanded {
   height: auto;
@@ -4490,7 +4490,7 @@ label.error {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #282825;
+  color: #535351;
   padding: 12px 0 12px 0;
   padding-left: 28.33333px;
   font-size: 0.8125em;
@@ -4542,7 +4542,7 @@ label.error {
   width: 0;
   height: 0;
   border: inset 5px;
-  border-color: transparent transparent transparent rgba(40, 40, 37, 0.5);
+  border-color: transparent transparent transparent rgba(83, 83, 81, 0.5);
   border-left-style: solid;
   margin-right: 28.33333px;
   margin-top: -4.5px;
@@ -4578,7 +4578,7 @@ label.error {
   margin-bottom: 0;
 }
 .top-bar-section .dropdown li.title h5 a {
-  color: #282825;
+  color: #535351;
   line-height: 42.5px;
   display: block;
 }
@@ -4675,7 +4675,7 @@ label.error {
     width: 0;
     height: 0;
     border: inset 5px;
-    border-color: rgba(40, 40, 37, 0.5) transparent transparent transparent;
+    border-color: rgba(83, 83, 81, 0.5) transparent transparent transparent;
     border-top-style: solid;
     margin-top: -2.5px;
     top: 42.5px;
@@ -8197,7 +8197,7 @@ h1.logo-text i {
 }
 
 .footer {
-  background: url('/images/line-tile.png?1377707650') #282825;
+  background: url('/images/line-tile.png?1377707650') #535351;
   color: white;
 }
 

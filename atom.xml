@@ -4,7 +4,7 @@
   <title><![CDATA[VaccineKeeper]]></title>
   <link href="http://vaccinekeeper.github.io/atom.xml" rel="self"/>
   <link href="http://vaccinekeeper.github.io/"/>
-  <updated>2013-09-08T11:37:51-04:00</updated>
+  <updated>2013-09-09T14:46:42-04:00</updated>
   <id>http://vaccinekeeper.github.io/</id>
   <author>
     <name><![CDATA[Michael Janiak]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[test second]]></title>
-    <link href="http://vaccinekeeper.github.io/blog/2013/08/28/test-second/"/>
-    <updated>2013-08-28T17:51:00-04:00</updated>
-    <id>http://vaccinekeeper.github.io/blog/2013/08/28/test-second</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress with Github Pages and Cloud9]]></title>
