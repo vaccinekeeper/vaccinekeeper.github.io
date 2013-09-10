@@ -8195,13 +8195,30 @@ h1.logo-text i {
   background: url('/images/overlay-transparent.png?1378249804') #72afaa;
 }
 
-.second.tooth:before {
+header.contain-to-grid:after {
   content: "";
   display: block;
   background: url('/images/Cut.png?1378769101');
   height: 6px;
   width: 100%;
   position: absolute;
+}
+
+.tooth:before {
+  content: "";
+  display: block;
+  background: url('/images/Cut.png?1378769101');
+  height: 6px;
+  width: 100%;
+  position: absolute;
+}
+
+.bottom-tooth:after {
+  content: "";
+  display: block;
+  background: url('/images/cut-up.png?1378769837');
+  height: 6px;
+  width: 100%;
 }
 
 .third {
@@ -8212,15 +8229,6 @@ h1.logo-text i {
 .footer {
   background: url('/images/line-tile.png?1377707650') #535351;
   color: white;
-}
-
-header.contain-to-grid:after {
-  content: "";
-  display: block;
-  background: url('/images/Cut.png?1378769101');
-  height: 6px;
-  width: 100%;
-  position: absolute;
 }
 
 .sign-up-button {
