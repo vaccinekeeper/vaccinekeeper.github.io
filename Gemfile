@@ -17,7 +17,8 @@ group :development do
   gem 'zurb-foundation', '4.3'
   gem 'webrick', '~> 1.3.1' # explicit dependency added to remove error
   gem 'rb-inotify', '~> 0.9' # a dependency error I was getting when using sass for 
-  gem 'rubypython' # for pygments
+  gem 'rubypython' # for pygments... can't get it to work
+  gem 'nokogiri', '1.5.2'
 end
 
 gem 'sinatra', '~> 1.4.2'

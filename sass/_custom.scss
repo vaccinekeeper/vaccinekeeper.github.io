@@ -138,11 +138,53 @@ h1.logo-text {
     background: image-url($def-overlay) $tertiary;
 }
 
+.forth{
+    color: $secondary;
+    background: image-url($def-overlay) $highlight;
+}
 
 .footer {
     background: image-url($line-overlay) $most-text;
     color: white;
 }
+
+
+
+
+header.contain-to-grid:after{
+    content: "";
+    display: block;
+    background: image-url("Cut.png") ;
+    height: 6px;
+    width: 100%;
+    position: absolute;
+}
+
+.tooth:before{
+    content: "";
+    display: block;
+    background: image-url("Cut.png");
+    height: 6px;
+    width: 100%;
+    position: absolute;
+}
+
+.bottom-tooth:after{
+    content: "";
+    display: block;
+    background: image-url("cut-up.png");
+    height: 6px;
+    width: 100%;
+}
+
+
+.top-bar-section ul li > a {
+    border-top: solid 1px #EEEEEE;
+}
+
+
+
+
 
 
 
@@ -163,6 +205,7 @@ h1.logo-text {
     }
 }
 
+//*********** Form
 
 
 
