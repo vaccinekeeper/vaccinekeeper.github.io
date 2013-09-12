@@ -1,0 +1,177 @@
+/* Load fonts */
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+
+/* General */
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+    color: #535351;
+
+}
+
+form li div label .currently { display: none }
+input.text, input.search, input.file, textarea.textarea, select.select {
+    font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #535351;
+}
+.wufoo {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: normal;
+	font-size: 16px;
+}
+
+/* label description */
+
+.wufoo label.desc, .wufoo legend.desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #447773;
+	padding: 0 0 0.3em 0;
+}
+
+.wufoo li.focused label.desc, .wufoo li.focused legend.desc, .safari .wufoo li.focused input.file {
+    color: #447773;
+	font-weight: 400;
+}
+
+/* Label below the input */
+
+.wufoo li.focused div label, .wufoo li.focused span label {
+    color: #535351;
+}
+
+/* Multiple choice labels */
+
+.wufoo label.choice {
+	font-size: 85%;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: 300;
+	color: #535351;
+}
+
+
+/* Question focus */
+
+
+.wufoo li.focused {
+	background: none;
+}
+
+
+/* Input boxes */ 
+
+input.text, input.search, textarea.textarea {
+	border: 1px solid #c3c3c3;
+	background: none;
+	
+}
+
+/* Submit button */ 
+
+
+.btTxt.submit {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0 300px 1.25em 0;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.75em;
+  padding-right: 1.5em;
+  padding-bottom: 0.8125em;
+  padding-left: 1.5em;
+  font-size: 1em;
+  background-color: #c4665c;
+  border-color: #ae4a3f;
+  color: white;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.btTxt.submit:hover, .btTxt.submit:focus {
+	background-color: #ae4a3f;
+}
+.btTxt.submit:hover, .btTxt.submit:focus {
+	color: white;
+}
+
+/* Required star */
+
+form span.req {
+    color: #C4665C !important;
+}
+
+/* Email input width */
+
+input.medium, select.medium {
+	width: 100%;
+}
+
+/* Error response */
+
+form li.error {
+	background: none !important;
+	margin-bottom: inherit !important;
+}
+
+.error label.desc {
+	font-weight: 400 !important;
+}
+
+form p.error {
+	color: #C4665C !important;
+	font-weight: 300;
+}
+
+form li.error .desc {
+	color: #C4665C !important;
+}
+
+/* Error message */
+
+#errorLi {
+	border: 1px solid #C4665C;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+#errorMsgLbl {
+	font-size: 125%;
+	color: #C4665C!important;
+	font-weight: 400;
+}
+
+#errorMsg {
+	color: #535351 !important;
+}
+
+#errorMsg b {
+	background: none !important;
+	color: #C4665C !important;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	font-weight: 400;
+}
+
+/* Thank you */
+
+.confirm h2 {
+	font-family: inherit;
+	color: #535351;
+	font-weight: 300;
+	font-size: 1.68em;
+	margin: 0 0 .2em 0;
+	line-height: normal;
+}
