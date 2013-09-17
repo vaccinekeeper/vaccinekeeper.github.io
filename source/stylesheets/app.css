@@ -2958,7 +2958,7 @@ label.error {
   overflow: hidden;
 }
 .flex-video.widescreen {
-  padding-bottom: 57.25%;
+  padding-bottom: 56.2%;
 }
 .flex-video.vimeo {
   padding-top: 0;
@@ -8238,6 +8238,10 @@ header.contain-to-grid:after {
 
 .top-bar-section ul li > a {
   border-top: solid 1px #EEEEEE;
+}
+
+.feature-img {
+  margin-top: 10%;
 }
 
 .sign-up-button {
