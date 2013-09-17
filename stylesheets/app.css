@@ -8240,6 +8240,10 @@ header.contain-to-grid:after {
   border-top: solid 1px #EEEEEE;
 }
 
+.feature-img {
+  margin-top: 10%;
+}
+
 .sign-up-button {
   border-style: solid;
   border-width: 1px;
