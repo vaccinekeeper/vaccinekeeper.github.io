@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vaccines | VaccineKeeper]]></title>
+  <link href="http://vaccinekeeper.github.io/blog/categories/vaccines/atom.xml" rel="self"/>
+  <link href="http://vaccinekeeper.github.io/"/>
+  <updated>2013-09-18T14:12:35-04:00</updated>
+  <id>http://vaccinekeeper.github.io/</id>
+  <author>
+    <name><![CDATA[Michael Janiak]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Pospective AIDS vaccines]]></title>
+    <link href="http://vaccinekeeper.github.io/blog/2013/09/18/prospective-hiv-vaccines/"/>
+    <updated>2013-09-18T11:06:00-04:00</updated>
+    <id>http://vaccinekeeper.github.io/blog/2013/09/18/prospective-hiv-vaccines</id>
+    <content type="html"><![CDATA[<p>After years of trying and <a href="http://www.npr.org/blogs/health/2013/04/26/179231916/failure-of-latest-hiv-vaccine-test-a-huge-disappointment">numerous failed attempts</a>
+there finally appears to be a <a href="http://www.nytimes.com/2013/09/17/science/new-hope-for-hiv-vaccine.html">worthy HIV vaccine candidate</a>,
+as a matter of fact, if the article is to be believed, it may even be closer to a cure.</p>
+
+<p>I dug around to learn why developing an HIV vaccine has proved so difficult, after all</p>
+]]></content>
+  </entry>
+  
+</feed>
