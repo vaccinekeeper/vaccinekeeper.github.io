@@ -8106,6 +8106,10 @@ h4 {
   color: white;
 }
 
+img.left {
+  margin-right: 1em;
+}
+
 @media only screen and (min-width: 768px) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
