@@ -36,6 +36,11 @@ h4 {font-size: $h4-font-size;}
 }
 
 
+img.left{
+    margin-right: 1em;
+}
+
+
 @media #{$small} {
     h1,h2,h3,h4,h5,h6 { line-height: $header-line-height; }
     h1 { font-size: $h1-font-size; }
