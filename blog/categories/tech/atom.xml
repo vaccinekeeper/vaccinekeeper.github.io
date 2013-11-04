@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tech | VaccineKeeper]]></title>
-  <link href="http://vaccinekeeper.github.io/blog/categories/tech/atom.xml" rel="self"/>
-  <link href="http://vaccinekeeper.github.io/"/>
-  <updated>2013-11-01T14:30:57-04:00</updated>
-  <id>http://vaccinekeeper.github.io/</id>
+  <link href="http://www.vaccinekeeper.com/blog/categories/tech/atom.xml" rel="self"/>
+  <link href="http://www.vaccinekeeper.com/"/>
+  <updated>2013-11-04T13:13:44-05:00</updated>
+  <id>http://www.vaccinekeeper.com/</id>
   <author>
     <name><![CDATA[Michael Janiak]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress with Github Pages and Cloud9]]></title>
-    <link href="http://vaccinekeeper.github.io/blog/2013/08/22/octopress-with-github-pages-and-cloud9/"/>
+    <link href="http://www.vaccinekeeper.com/blog/2013/08/22/octopress-with-github-pages-and-cloud9/"/>
     <updated>2013-08-22T14:35:00-04:00</updated>
-    <id>http://vaccinekeeper.github.io/blog/2013/08/22/octopress-with-github-pages-and-cloud9</id>
+    <id>http://www.vaccinekeeper.com/blog/2013/08/22/octopress-with-github-pages-and-cloud9</id>
     <content type="html"><![CDATA[<p>This blog runs on <a href="http://octopress.org/">Octopress</a>, a framework for <a href="https://github.com/mojombo/jekyll">Jekyll</a>
 and is hosted on <a href="http://pages.github.com/">GitHub Pages</a>. I&rsquo;ve also set it up on <a href="https://c9.io/">Cloud9</a>, a
 useful web IDE that enables you to write blog posts on any device.</p>

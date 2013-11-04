@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: vaccines | VaccineKeeper]]></title>
-  <link href="http://vaccinekeeper.github.io/blog/categories/vaccines/atom.xml" rel="self"/>
-  <link href="http://vaccinekeeper.github.io/"/>
-  <updated>2013-11-01T14:30:57-04:00</updated>
-  <id>http://vaccinekeeper.github.io/</id>
+  <link href="http://www.vaccinekeeper.com/blog/categories/vaccines/atom.xml" rel="self"/>
+  <link href="http://www.vaccinekeeper.com/"/>
+  <updated>2013-11-04T13:13:44-05:00</updated>
+  <id>http://www.vaccinekeeper.com/</id>
   <author>
     <name><![CDATA[Michael Janiak]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Prospective HIV/AIDS vaccine]]></title>
-    <link href="http://vaccinekeeper.github.io/blog/2013/11/01/prospective-hiv-slash-aids-vaccine/"/>
+    <link href="http://www.vaccinekeeper.com/blog/2013/11/01/prospective-hiv-slash-aids-vaccine/"/>
     <updated>2013-11-01T12:06:00-04:00</updated>
-    <id>http://vaccinekeeper.github.io/blog/2013/11/01/prospective-hiv-slash-aids-vaccine</id>
+    <id>http://www.vaccinekeeper.com/blog/2013/11/01/prospective-hiv-slash-aids-vaccine</id>
     <content type="html"><![CDATA[<p>After years of trying and <a href="http://www.npr.org/blogs/health/2013/04/26/179231916/failure-of-latest-hiv-vaccine-test-a-huge-disappointment">numerous failed attempts</a>
 there finally appears to be some hope for the prevention or curing of HIV.</p>
 

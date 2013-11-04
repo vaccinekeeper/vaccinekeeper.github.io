@@ -2,34 +2,34 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://vaccinekeeper.github.io/blog/2013/08/22/octopress-with-github-pages-and-cloud9/
+            http://www.vaccinekeeper.com/blog/2013/08/22/octopress-with-github-pages-and-cloud9/
         </loc>
         <lastmod>2013-09-10T11:33:45-04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://vaccinekeeper.github.io/blog/2013/11/01/prospective-hiv-slash-aids-vaccine/
+            http://www.vaccinekeeper.com/blog/2013/11/01/prospective-hiv-slash-aids-vaccine/
         </loc>
         <lastmod>2013-11-01T14:29:58-04:00</lastmod>
     </url>
     <url>
-        <loc>http://vaccinekeeper.github.io/robots.txt</loc>
+        <loc>http://www.vaccinekeeper.com/robots.txt</loc>
         <lastmod>2013-08-28T12:34:10-04:00</lastmod>
     </url>
     <url>
-        <loc>http://vaccinekeeper.github.io/blog/archives/</loc>
+        <loc>http://www.vaccinekeeper.com/blog/archives/</loc>
         <lastmod>2013-11-01T14:29:58-04:00</lastmod>
     </url>
     <url>
-        <loc>http://vaccinekeeper.github.io/blog/</loc>
+        <loc>http://www.vaccinekeeper.com/blog/</loc>
         <lastmod>2013-11-01T14:29:58-04:00</lastmod>
     </url>
     <url>
-        <loc>http://vaccinekeeper.github.io/signup/</loc>
+        <loc>http://www.vaccinekeeper.com/signup/</loc>
         <lastmod>2013-11-01T14:29:58-04:00</lastmod>
     </url>
     <url>
-        <loc>http://vaccinekeeper.github.io/</loc>
+        <loc>http://www.vaccinekeeper.com/</loc>
         <lastmod>2013-11-01T14:29:58-04:00</lastmod>
     </url>
 </urlset>
