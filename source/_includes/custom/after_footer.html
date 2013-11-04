@@ -2,6 +2,7 @@
   Add content to be output at the bottom of each page. (You might use this for analytics scripts, for example)
 {% endcomment %}
 
+{% include google_analytics.html %}
 
 <script>
 document.write('<script src=' +
@@ -32,39 +33,3 @@ document.write('<script src=' +
 <script>
 $(document).foundation();
 </script>
-
-<!--
-<script src="http://malsup.github.io/jquery.form.js" type="text/javascript"></script>
-<script> 
-    // wait for the DOM to be loaded
-(function(){
-    $('#ss-form').submit(function() {
-
-        $(this).ajaxSubmit({
-            target: '#output',
-            beforeSubmit: validate,
-            success: handleSuccess,
-            error: handleError
-        });
-        
-        return false;
-    })
-
-
-    function validate(formData, jqForm, options) {
-        console.log('formData', formData);
-        return true;
-    }
-    
-    function handleSuccess(responseText, status){
-        console.log('success', responseText);
-    }
-    
-    function handleError(data){
-        console.log('error', data);
-    }
-    
-})();
-</script> 
-
--->

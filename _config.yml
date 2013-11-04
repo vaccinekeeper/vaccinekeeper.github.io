@@ -2,9 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://vaccinekeeper.github.io
+url: http://www.vaccinekeeper.com
 title: VaccineKeeper
-subtitle:
+subtitle: A vaccine scheduling and record keeping app for caring parents
 author: Michael Janiak
 simple_search: http://google.com/search
 description:
@@ -95,7 +95,7 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-35910148-4
 
 # Facebook Like
 facebook_like: false
