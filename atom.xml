@@ -4,7 +4,7 @@
   <title><![CDATA[VaccineKeeper kids]]></title>
   <link href="http://www.vaccinekeeper.com/atom.xml" rel="self"/>
   <link href="http://www.vaccinekeeper.com/"/>
-  <updated>2014-02-06T17:08:33-05:00</updated>
+  <updated>2014-02-06T17:10:28-05:00</updated>
   <id>http://www.vaccinekeeper.com/</id>
   <author>
     <name><![CDATA[Michael Janiak]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[This app will fulfill your vaccination scheduling needs]]></title>
-    <link href="http://www.vaccinekeeper.com/blog/2014/02/06/this-app-will-fulfill-your-vaccination-scheduling-needs/"/>
+    <title type="html"><![CDATA[This app will fulfill all your vaccination scheduling needs]]></title>
+    <link href="http://www.vaccinekeeper.com/blog/2014/02/06/this-app-will-fulfill-all-your-vaccination-scheduling-needs/"/>
     <updated>2014-02-06T16:28:00-05:00</updated>
-    <id>http://www.vaccinekeeper.com/blog/2014/02/06/this-app-will-fulfill-your-vaccination-scheduling-needs</id>
+    <id>http://www.vaccinekeeper.com/blog/2014/02/06/this-app-will-fulfill-all-your-vaccination-scheduling-needs</id>
     <content type="html"><![CDATA[<p>It only took a year but Vaccine Keeper <em>kids</em> is finally ready to take on users!</p>
 
 <p>Right now, Vaccine Keeper <em>kids</em> is a web app but it will format itself to mobile phones or tables.
