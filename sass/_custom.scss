@@ -13,7 +13,14 @@
 
 .top-bar-section{
     @extend %montserrat;
+    
 }
+
+#login-link{
+    color: $tertiary;
+    font-size: $h2-font-size;
+}
+
 
 // Need to override Zurbs default header font sizing to control shrinkage on mobile. 
 // Remember, default i.e. without a media query is mobile, $media #{$small} are small screens and above
@@ -46,6 +53,7 @@ img.left{
     h1 { font-size: $h1-font-size; }
     h2 { font-size: $h2-font-size;}
 }
+
 
 
 .inline-list.social-icons{
@@ -211,6 +219,8 @@ header.contain-to-grid:after{
         padding-top:33px;
     }
 }
+
+
 
 //*********** Form
 
